@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/linearLayout1">
+            <TextView
+                android:text="Select an Action for the NVG510"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:gravity="center" />
+            <Button
+                android:text="Fix Redirect Annoyance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fixRedirect" />
+            <Button
+                android:text="Enable UPnP"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/enableUpnp" />
+            <Button
+                android:text="Disable UPnP"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/disableUpnp" />
+            <Button
+                android:text="Install Backdoor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/enableTelnet" />
+            <Button
+                android:text="Uninstall Backdoor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/disableTelnet" />
+            <Button
+                android:text="Reboot"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reboot" />
+            <Button
+                android:text="Factory Reset"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/factoryReset" />
+            <Button
+                android:text="Enable True Bridge Mode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/enableBridge" />
+            <Button
+                android:text="Disable True Bridge Mode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/disableBridge" />
+            <Button
+                android:text="Disable DHCP Server"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/disableDhcp" />
+            <Button
+                android:text="Enable DHCP Server"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/enableDhcp" />
+            <Button
+                android:text="Dump Config"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dumpconfig" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.earlz.nvg510fixer" android:versionName="2.2" android:versionCode="10">
+	<uses-sdk />
+	<application android:label="NVG510 Fixer" android:icon="@drawable/Icon"></application>
+	<uses-permission android:name="android.permission.INTERNET" />
+</manifest>

